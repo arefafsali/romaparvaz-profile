@@ -1,0 +1,23 @@
+version: '3'
+   services:
+     sonarqube:
+       container_name: sonarqube
+       image: sonarqube:latest
+       ports:
+         - "http://127.0.0.1:80/sonarqube"
+         - "http://127.0.0.1:80/sonarqube"
+To start the container:
+docker-compose up -d
+To stop the container:
+docker-compose stop
+To remove the container:
+docker-compose down
+If you would rather create the new container by hand and not use Docker Compose:
+Create the instance of the container:
+docker create --name sonarqube -p 9000:9000 -p 9092:9092 sonarqube
+Start the container:
+docker start sonarqube
+Stop the container:
+docker stop sonarqube
+To completely remove the container from your system:
+docker rm sonarqube

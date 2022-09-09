@@ -1,0 +1,17 @@
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+/lib
+# testing
+/coverage
+/scannerwork
+
+# production
+/build
+/lib
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
